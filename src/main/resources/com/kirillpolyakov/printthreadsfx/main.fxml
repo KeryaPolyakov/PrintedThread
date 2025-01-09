@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.printthreadsfx.controllers.MainController">
+   <children>
+      <Button layoutX="32.0" layoutY="83.0" mnemonicParsing="false" onAction="#buttonAdd" text="Add" />
+      <Button layoutX="135.0" layoutY="83.0" mnemonicParsing="false" onAction="#buttonCancel" text="Cancel" />
+      <Button layoutX="525.0" layoutY="83.0" mnemonicParsing="false" onAction="#buttonGet" text="Get" />
+      <Button layoutX="274.0" layoutY="355.0" mnemonicParsing="false" onAction="#buttonStop" text="Stop" />
+      <ListView fx:id="listViewNotPrinted" layoutX="207.0" layoutY="139.0" prefHeight="200.0" prefWidth="166.0" />
+      <Label layoutX="252.0" layoutY="117.0" text="Not printed" />
+      <Label layoutX="459.0" layoutY="117.0" text="Printed" />
+      <ComboBox fx:id="comboBoxType" layoutX="31.0" layoutY="42.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxSortBy" layoutX="403.0" layoutY="42.0" prefWidth="150.0" />
+      <Label layoutX="37.0" layoutY="14.0" text="Type" />
+      <Label layoutX="459.0" layoutY="14.0" text="Sort by" />
+      <ListView fx:id="listViewToPrint" layoutX="22.0" layoutY="139.0" prefHeight="200.0" prefWidth="166.0" />
+      <Label layoutX="49.0" layoutY="117.0" text="To print" />
+      <ListView fx:id="listViewPrinted" layoutX="418.0" layoutY="139.0" prefHeight="200.0" prefWidth="160.0" />
+      <TextField fx:id="textFieldAVR" layoutX="216.0" layoutY="68.0" />
+      <Button layoutX="257.0" layoutY="30.0" mnemonicParsing="false" onAction="#buttonAVR" text="AVR time" />
+   </children>
+</AnchorPane>
